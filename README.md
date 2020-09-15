@@ -13,3 +13,10 @@ Click on the pdf to print the signature at cursor position. It should display th
 - Signature is not well rendered
 - Signature bad positioning
 - Html pdf borders rendered in generated pdf 
+
+### packages used
+
+- ng2 pdf viewer
+- html2canvas
+- jQuery
+- jsPDF
