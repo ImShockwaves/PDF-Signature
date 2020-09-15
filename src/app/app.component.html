@@ -1,0 +1,20 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<div class="viewer"><div class="render">
+  <pdf-viewer [src]="pdfSrc"
+              [render-text]="true"
+              [show-borders]="showBorders"
+              [show-all]="false"
+              [page]="1"
+              class="view"
+              (click)="pasteSignature($event)"
+    ></pdf-viewer>
+    <img *ngIf="clicked"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Autograph_of_Benjamin_Franklin.svg/1200px-Autograph_of_Benjamin_Franklin.svg.png"
+          class="signature"
+          [ngStyle]="{'top': y + 'px', 'left': x + 'px'}"
+    />
+</div></div>

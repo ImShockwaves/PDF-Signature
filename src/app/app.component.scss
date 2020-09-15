@@ -1,0 +1,42 @@
+.view {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+}
+
+.viewer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.render {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+}
+
+.signature {
+  position: absolute;
+  width: 20%;
+  height: auto;
+}
+
+:host ::ng-deep .ng2-pdf-viewer-container {
+  margin: 0px !important;
+  width: fit-content !important;
+  height: fit-content !important;
+}
+
+:host ::ng-deep .ng2-pdf-viewer-container .pdfViewer {
+  margin: 0px !important;
+  width: fit-content !important;
+  height: fit-content !important;
+}
+
+:host ::ng-deep .page {
+  margin: 0px !important;
+  width: 595px;
+  height: 842px;
+}
